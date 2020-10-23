@@ -16,7 +16,6 @@
         <module>hystrix</module>
         <module>zuul</module>
         <module>config</module>
-        <module>mybatisGen</module>
     </modules>
 
     <properties>
