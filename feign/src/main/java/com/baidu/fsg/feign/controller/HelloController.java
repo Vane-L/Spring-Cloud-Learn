@@ -16,6 +16,7 @@ public class HelloController {
     @RequestMapping(value = "/feign", method = RequestMethod.GET)
     @ResponseBody
     public String hello() {
-        return helloClient.hello();
+        String string = helloClient.hello();
+        return string;
     }
 }

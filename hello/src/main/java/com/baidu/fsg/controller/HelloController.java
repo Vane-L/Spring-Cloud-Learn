@@ -21,8 +21,9 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello(HttpServletRequest request, HttpServletResponse response) {
-        int status = response.getStatus();
-        System.out.println("status: " + status);
-        return "Hello World!";
+        throw new RuntimeException("error runtime");
+        //int status = response.getStatus();
+        //System.out.println("status: " + status);
+        //return "Hello World!";
     }
 }
